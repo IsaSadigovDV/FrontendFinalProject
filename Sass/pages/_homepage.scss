@@ -1,0 +1,92 @@
+body {
+  background-color: $background;
+}
+a {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+  color: $text;
+}
+p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 35px;
+  text-transform: capitalize;
+  color: $text;
+}
+h1 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 67px;
+  line-height: 74px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: $text;
+}
+h4 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: $text;
+}
+.navbar_container {
+  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  .right_side_navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    .navBtn {
+      width: 152px;
+      height: 60px;
+      gap: 12px;
+    }
+  }
+}
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 195px;
+  gap: 30px;
+  .container {
+    width: 1050px;
+    .welcome_text {
+      width: 510px;
+      height: 544px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 30px;
+      .button {
+        width: 224px;
+        height: 60px;
+        background-color: $call_to_action;
+        gap: 12px;
+      }
+    }
+  }
+}

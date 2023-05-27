@@ -1,9 +1,9 @@
-@import "./base/reset";
-@import "./base/typography";
+@import "./Sass/base/reset";
+@import "./Sass/base/typography";
 
-@import "./utils/color";
+@import "./Sass/utils/color";
+//mixins
 
+@import "./Sass/components/button";
 
-
-
-@import "./Html/homepage.html";
+@import "./Sass/pages/homepage";

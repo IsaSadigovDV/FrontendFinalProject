@@ -1,4 +1,4 @@
-button {
+.button {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
@@ -6,4 +6,10 @@ button {
   line-height: 22px;
   text-align: center;
   color: #ffffff;
+  background-color: $call_to_action;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
