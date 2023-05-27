@@ -187,6 +187,7 @@ nav {
   width: 607px;
   height: 60px;
   gap: 10px;
+  transition: 0.3s;
 }
 .navbar_container .right_side_navbar .navbar_links button {
   display: flex;
@@ -200,7 +201,12 @@ nav {
   padding: 12px 20px;
 }
 .navbar_container .right_side_navbar .navbar_links .navBtn {
+  transition: 0.3s;
   background-color: #a259ff;
+}
+.navbar_container .right_side_navbar .navbar_links .navBtn:hover {
+  cursor: pointer;
+  transform: scale(0.9);
 }
 
 body {
@@ -240,14 +246,21 @@ h1 {
   color: #ffffff;
 }
 
+h3 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
 h4 {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 39px;
-  display: flex;
-  align-items: center;
   text-transform: capitalize;
   color: #ffffff;
 }
@@ -287,6 +300,13 @@ h5 {
   padding: 0px;
   gap: 30px;
 }
+.welcome .welcome_container .welcome_text .button {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.welcome .welcome_container .welcome_text .button:hover {
+  transform: scale(0.9);
+}
 .welcome .welcome_container .welcome_text .infoDiv {
   display: flex;
   flex-direction: row;
@@ -305,10 +325,9 @@ h5 {
   background-color: #a259ff;
   gap: 12px;
 }
-.welcome .welcome_container .welcome_image {
-  background-color: #3b3b3b;
-}
 .welcome .welcome_container .welcome_image .welcome_image_text {
+  background-color: #3b3b3b;
+  border-radius: 0px 0px 20px 20px;
   padding: 20px;
   gap: 10px;
 }
@@ -317,5 +336,36 @@ h5 {
   display: flex;
   align-items: center;
   padding: 0px;
+  gap: 12px;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trending .container {
+  width: 1050px;
+}
+.trending .trending_container {
+  padding: 80px 0px;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+.trending .trending_container .trending_cards {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+}
+.trending .trending_container .trending_cards .little_cards {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.trending .trending_container .trending_cards .little_text {
+  display: flex;
   gap: 12px;
 }

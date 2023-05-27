@@ -30,6 +30,7 @@ nav {
       width: 607px;
       height: 60px;
       gap: 10px;
+      transition: 0.3s;
       button {
         display: flex;
         align-items: center;
@@ -42,7 +43,12 @@ nav {
         padding: 12px 20px;
       }
       .navBtn {
+        transition: 0.3s;
         background-color: $call_to_action;
+        &:hover {
+          cursor: pointer;
+          transform: scale(0.9);
+        }
       }
     }
   }
