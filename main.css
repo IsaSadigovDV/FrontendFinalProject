@@ -360,10 +360,17 @@ h5 {
   padding: 0px;
   gap: 15px;
 }
+.trending .trending_container .trending_cards .card img {
+  transition: 0.3s;
+}
+.trending .trending_container .trending_cards .card img:hover {
+  transform: scale(0.9);
+}
 .trending .trending_container .trending_cards .little_cards {
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 .trending .trending_container .trending_cards .little_text {
   display: flex;

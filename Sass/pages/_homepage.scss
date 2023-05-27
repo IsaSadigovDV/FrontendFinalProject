@@ -142,12 +142,22 @@ h5 {
       align-items: flex-start;
       padding: 0px;
       gap: 15px;
-      .little_cards{
+      .card {
+        img {
+          transition: 0.3s;
+
+          &:hover {
+            transform: scale(0.9);
+          }
+        }
+      }
+      .little_cards {
         margin-top: 15px;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 15px;
       }
-      .little_text{
+      .little_text {
         display: flex;
         gap: 12px;
       }
