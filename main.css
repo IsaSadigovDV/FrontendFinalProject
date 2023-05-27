@@ -153,6 +153,56 @@ html {
   justify-content: center;
 }
 
+nav {
+  padding: 20px 50px;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+.navbar_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_container .left_side_navbar {
+  gap: 10px;
+}
+.navbar_container .right_side_navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+}
+.navbar_container .right_side_navbar .navbar_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 607px;
+  height: 60px;
+  gap: 10px;
+}
+.navbar_container .right_side_navbar .navbar_links button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  gap: 12px;
+  border-radius: 20px;
+  height: 46px;
+  padding: 12px 20px;
+}
+.navbar_container .right_side_navbar .navbar_links .navBtn {
+  background-color: #a259ff;
+}
+
 body {
   background-color: #2b2b2b;
 }
@@ -202,26 +252,14 @@ h4 {
   color: #ffffff;
 }
 
-.navbar_container {
-  width: 1280px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-}
-.navbar_container .right_side_navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0px;
-  gap: 10px;
-}
-.navbar_container .right_side_navbar .navBtn {
-  width: 152px;
-  height: 60px;
-  gap: 12px;
+h5 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 31px;
+  text-transform: capitalize;
+  color: #ffffff;
 }
 
 .welcome {
@@ -235,7 +273,12 @@ h4 {
 .welcome .container {
   width: 1050px;
 }
-.welcome .container .welcome_text {
+.welcome .welcome_container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.welcome .welcome_container .welcome_text {
   width: 510px;
   height: 544px;
   display: flex;
@@ -244,9 +287,35 @@ h4 {
   padding: 0px;
   gap: 30px;
 }
-.welcome .container .welcome_text .button {
+.welcome .welcome_container .welcome_text .infoDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  width: 510px;
+}
+.welcome .welcome_container .welcome_text .infoDiv .infos {
+  border-radius: 20px;
+  width: 150px;
+}
+.welcome .welcome_container .welcome_text .button {
   width: 224px;
   height: 60px;
   background-color: #a259ff;
+  gap: 12px;
+}
+.welcome .welcome_container .welcome_image {
+  background-color: #3b3b3b;
+}
+.welcome .welcome_container .welcome_image .welcome_image_text {
+  padding: 20px;
+  gap: 10px;
+}
+.welcome .welcome_container .welcome_image .welcome_image_text > div {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0px;
   gap: 12px;
 }

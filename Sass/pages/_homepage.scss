@@ -42,26 +42,14 @@ h4 {
   text-transform: capitalize;
   color: $text;
 }
-.navbar_container {
-  width: 1280px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  .right_side_navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0px;
-    gap: 10px;
-    .navBtn {
-      width: 152px;
-      height: 60px;
-      gap: 12px;
-    }
-  }
+h5 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 31px;
+  text-transform: capitalize;
+  color: $text;
 }
 
 .welcome {
@@ -73,6 +61,11 @@ h4 {
   gap: 30px;
   .container {
     width: 1050px;
+  }
+  .welcome_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     .welcome_text {
       width: 510px;
       height: 544px;
@@ -81,11 +74,37 @@ h4 {
       align-items: flex-start;
       padding: 0px;
       gap: 30px;
+      .infoDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        width: 510px;
+        .infos {
+          border-radius: 20px;
+          width: 150px;
+        }
+      }
       .button {
         width: 224px;
         height: 60px;
         background-color: $call_to_action;
         gap: 12px;
+      }
+    }
+    .welcome_image {
+      background-color: $background_secondary;
+      .welcome_image_text {
+        padding: 20px;
+        gap: 10px;
+        > div {
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          padding: 0px;
+          gap: 12px;
+        }
       }
     }
   }
