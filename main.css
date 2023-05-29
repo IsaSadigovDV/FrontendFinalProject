@@ -276,6 +276,10 @@ h5 {
   color: #ffffff;
 }
 
+.container {
+  width: 1050px;
+}
+
 .welcome {
   display: flex;
   flex-direction: row;
@@ -392,6 +396,7 @@ h5 {
   align-items: flex-end;
   padding: 0px;
   gap: 100px;
+  margin-bottom: 60px;
 }
 .creators .creators_container .creators_top .top_left {
   display: flex;
@@ -419,7 +424,107 @@ h5 {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-}
-.creators .creators_container .container {
   width: 1050px;
+  gap: 30px;
+}
+.creators .creators_container .creators_cards .card_row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+.creators .creators_container .creators_cards .card_row .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  isolation: isolate;
+  width: 240px;
+  height: 238px;
+  background: #3b3b3b;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.creators .creators_container .creators_cards .card_row .card:hover {
+  transform: scale(0.95);
+}
+.creators .creators_container .creators_cards .card_row .card .card_number {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 20px;
+  top: 18px;
+  background: #2b2b2b;
+  border-radius: 20px;
+  z-index: 2;
+}
+.creators .creators_container .creators_cards .card_row .card .card_number > p {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #858584;
+  z-index: 0;
+  position: absolute;
+  width: 10px;
+  height: 22px;
+  left: calc(50% - 5px);
+  top: calc(50% - 11px);
+}
+.creators .creators_container .creators_cards .card_row .card .creators_card_photo {
+  width: 110px;
+  height: 120px;
+}
+.creators .creators_container .creators_cards .card_row .card .creators_card_photo > img {
+  width: 120px;
+  height: 120px;
+}
+.creators .creators_container .creators_cards .card_row .card .creators_card_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+  width: 200px;
+  height: 58px;
+}
+.creators .creators_container .creators_cards .card_row .card .creators_card_text h5 {
+  align-self: center;
+}
+.creators .creators_container .creators_cards .card_row .card .creators_card_text .creators_card_text_little {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  align-items: center;
+}
+.creators .creators_container .creators_cards .card_row .card .creators_card_text .creators_card_text_little > p {
+  color: #858584;
+  line-height: 22.4px;
+  font-size: 16px;
+}
+.creators .creators_container .creators_cards .card_row .card .creators_card_text .creators_card_text_little > span {
+  font-size: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 195px;
+  gap: 60px;
 }
