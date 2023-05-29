@@ -11,6 +11,7 @@ a {
   text-decoration: none;
   color: $text;
 }
+
 p {
   font-family: "Work Sans";
   font-style: normal;
@@ -57,7 +58,6 @@ h5 {
   text-transform: capitalize;
   color: $text;
 }
-
 .welcome {
   display: flex;
   flex-direction: row;
@@ -161,6 +161,53 @@ h5 {
         display: flex;
         gap: 12px;
       }
+    }
+  }
+}
+
+.creators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .creators_container {
+    width: 1050px;
+    .creators_top {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      padding: 0px;
+      gap: 100px;
+      .top_left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: 703px;
+      }
+
+      .top_right > .button {
+        background-color: transparent;
+        width: 247px;
+        height: 60px;
+        border: 2px solid #a259ff;
+        border-radius: 20px;
+        gap: 12px;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          background-color: #a259ff;
+        }
+      }
+    }
+    .creators_cards {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+    }
+    .container {
+      width: 1050px;
     }
   }
 }

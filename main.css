@@ -151,6 +151,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 nav {
@@ -375,4 +376,50 @@ h5 {
 .trending .trending_container .trending_cards .little_text {
   display: flex;
   gap: 12px;
+}
+
+.creators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.creators .creators_container {
+  width: 1050px;
+}
+.creators .creators_container .creators_top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 100px;
+}
+.creators .creators_container .creators_top .top_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: 703px;
+}
+.creators .creators_container .creators_top .top_right > .button {
+  background-color: transparent;
+  width: 247px;
+  height: 60px;
+  border: 2px solid #a259ff;
+  border-radius: 20px;
+  gap: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.creators .creators_container .creators_top .top_right > .button:hover {
+  background-color: #a259ff;
+}
+.creators .creators_container .creators_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+.creators .creators_container .container {
+  width: 1050px;
 }
