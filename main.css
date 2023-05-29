@@ -276,6 +276,24 @@ h5 {
   color: #ffffff;
 }
 
+.grayText {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  color: #858584;
+}
+
+.whiteText {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
 .container {
   width: 1050px;
 }
@@ -631,4 +649,71 @@ h5 {
   padding: 0px;
   gap: 30px;
   width: 1050px;
+}
+.discover .discover_container .discover_cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 330px;
+  height: 469px;
+  background: #3b3b3b;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.discover .discover_container .discover_cards .card:hover {
+  transform: scale(0.96);
+}
+.discover .discover_container .discover_cards .card .discover_image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  border-radius: 20px 20px 0px 0px;
+}
+.discover .discover_container .discover_cards .card .discover_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 30px 25px;
+  gap: 25px;
+  width: 330px;
+}
+.discover .discover_container .discover_cards .card .discover_info .info_top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 5px;
+  width: 270px;
+}
+.discover .discover_container .discover_cards .card .discover_info .info_top .info_top_avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+.discover .discover_container .discover_cards .card .discover_info .info_bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  width: 270px;
+}
+.discover .discover_container .discover_cards .card .discover_info .info_bottom .info_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 21px 0px 0px;
+  gap: 8px;
+}
+.discover .discover_container .discover_cards .card .discover_info .info_bottom .info_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+  gap: 8px;
 }
