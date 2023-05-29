@@ -525,6 +525,65 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 195px;
   gap: 60px;
+  padding: 80px 0;
+}
+.categories .categories_container {
+  padding: 80px 0;
+}
+.categories .categories_container .categories_top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+.categories .categories_container .categories_cards {
+  gap: 30px;
+  display: flex;
+}
+.categories .categories_container .categories_cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 240px;
+  height: 316px;
+  background: #3b3b3b;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.categories .categories_container .categories_cards .card:hover {
+  transform: scale(0.92);
+}
+.categories .categories_container .categories_cards .card .card_photo {
+  width: 240px;
+  height: 316px;
+  position: relative;
+}
+.categories .categories_container .categories_cards .card .card_photo .blured_photo {
+  width: 240px;
+  height: 240px;
+  border-radius: 20px 20px 0px 0px;
+}
+.categories .categories_container .categories_cards .card .card_photo .blured_photo > img {
+  filter: blur(7.5px);
+}
+.categories .categories_container .categories_cards .card .card_photo .photo_tool {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 100px;
+  height: 100px;
+}
+.categories .categories_container .categories_cards .card .card_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 30px 25px;
+  gap: 25px;
+  width: 240px;
+  height: 76px;
 }

@@ -314,6 +314,71 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 195px;
   gap: 60px;
+  padding: 80px 0;
+  .categories_container {
+    padding: 80px 0;
+
+    .categories_top {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 60px;
+    }
+    .categories_cards {
+      gap: 30px;
+      display: flex;
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 240px;
+        height: 316px;
+        background: $background_secondary;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+          transform: scale(0.92);
+        }
+        .card_photo {
+          width: 240px;
+          height: 316px;
+          position: relative;
+          .blured_photo {
+            width: 240px;
+            height: 240px;
+            border-radius: 20px 20px 0px 0px;
+            > img {
+              filter: blur(7.5px);
+            }
+          }
+
+          .photo_tool {
+            position: absolute;
+            top: 25%;
+            left: 30%;
+            width: 100px;
+            height: 100px;
+          }
+        }
+        .card_text {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 20px 30px 25px;
+          gap: 25px;
+          width: 240px;
+          height: 76px;
+        }
+      }
+    }
+  }
+}
+
+
+.discover{
 }
