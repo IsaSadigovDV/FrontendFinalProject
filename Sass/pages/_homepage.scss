@@ -568,7 +568,13 @@ h5 {
     }
   }
 }
-
+.nft_highlight {
+  img {
+    width: 100%;
+    height: 660px;
+    object-fit: cover;
+  }
+}
 .join {
   display: flex;
   flex-direction: column;
@@ -583,7 +589,7 @@ h5 {
     gap: 80px;
     background: $background_secondary;
     border-radius: 20px;
-    
+
     .join_right {
       display: flex;
       flex-direction: column;
@@ -617,6 +623,9 @@ h5 {
           font-size: 16px;
           line-height: 22px;
           color: #2b2b2b;
+          &:focus {
+            outline: none;
+          }
         }
         .button {
           padding: 0px 50px;
