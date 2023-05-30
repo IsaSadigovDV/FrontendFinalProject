@@ -1319,7 +1319,9 @@ h5 {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
+  gap: 25px;
   width: 420px;
+  height: 184px;
 }
 .footer .footer_container .footer_right h5 {
   font-family: "Space Mono";
@@ -1357,7 +1359,7 @@ h5 {
   width: 179px;
   height: 60px;
 }
-.footer .footer_container .footer_bottom {
+.footer .footer_bottom {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1365,4 +1367,9 @@ h5 {
   gap: 20px;
   width: 1049.41px;
   height: 33px;
+}
+.footer .footer_bottom .divider {
+  width: 1049.41px;
+  height: 0px;
+  border: 1px solid #858584;
 }
