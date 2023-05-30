@@ -1,0 +1,106 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 195px;
+  gap: 30px;
+  width: 100%;
+  background: #3b3b3b;
+  .footer_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 31px;
+    width: 1049.41px;
+    height: 191px;
+    .footer_left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px 84px 0px 0px;
+      gap: 30px;
+      width: 327.41px;
+      .left_info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .left_bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 15px;
+      }
+    }
+
+    .footer_mid {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 25px;
+      width: 240px;
+      .mid_bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+      }
+    }
+
+    .footer_right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      width: 420px;
+      .right_bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+        .join_subscribe_form {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 16px 0px 16px 20px;
+          gap: 12px;
+          height: 60px;
+          background: #ffffff;
+          border-radius: 20px;
+          > input {
+            border: none;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #2b2b2b;
+            &:focus {
+              outline: none;
+            }
+          }
+          .button {
+            padding: 0px 50px;
+            gap: 12px;
+            width: 179px;
+            height: 60px;
+          }
+        }
+      }
+    }
+    .footer_bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 20px;
+      width: 1049.41px;
+      height: 33px;
+    }
+  }
+}
