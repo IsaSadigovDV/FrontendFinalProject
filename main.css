@@ -1113,6 +1113,7 @@ h5 {
   gap: 16px;
   width: 350px;
   height: 60px;
+  transition: 0.1s;
 }
 .info .info_container .infos:hover {
   border-bottom: 2px solid #858584;
@@ -1144,7 +1145,7 @@ h5 {
 
 .artist_cards {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding: 80px 0px;
   gap: 30px;
@@ -1152,12 +1153,22 @@ h5 {
 }
 .artist_cards .cards_container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 30px;
 }
-.artist_cards .cards_container .card {
+.artist_cards .cards_container .top_card,
+.artist_cards .cards_container .mid_card,
+.artist_cards .cards_container .bottom_card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+}
+.artist_cards .cards_container .top_card .card,
+.artist_cards .cards_container .mid_card .card,
+.artist_cards .cards_container .bottom_card .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1169,10 +1180,14 @@ h5 {
   transition: 0.3s;
   cursor: pointer;
 }
-.artist_cards .cards_container .card:hover {
+.artist_cards .cards_container .top_card .card:hover,
+.artist_cards .cards_container .mid_card .card:hover,
+.artist_cards .cards_container .bottom_card .card:hover {
   transform: scale(0.96);
 }
-.artist_cards .cards_container .card .artist_image {
+.artist_cards .cards_container .top_card .card .artist_image,
+.artist_cards .cards_container .mid_card .card .artist_image,
+.artist_cards .cards_container .bottom_card .card .artist_image {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1180,7 +1195,9 @@ h5 {
   gap: 10px;
   border-radius: 20px 20px 0px 0px;
 }
-.artist_cards .cards_container .card .artist_card_info {
+.artist_cards .cards_container .top_card .card .artist_card_info,
+.artist_cards .cards_container .mid_card .card .artist_card_info,
+.artist_cards .cards_container .bottom_card .card .artist_card_info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1188,7 +1205,9 @@ h5 {
   gap: 25px;
   width: 330px;
 }
-.artist_cards .cards_container .card .artist_card_info .info_top {
+.artist_cards .cards_container .top_card .card .artist_card_info .info_top,
+.artist_cards .cards_container .mid_card .card .artist_card_info .info_top,
+.artist_cards .cards_container .bottom_card .card .artist_card_info .info_top {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1196,30 +1215,40 @@ h5 {
   gap: 5px;
   width: 270px;
 }
-.artist_cards .cards_container .card .artist_card_info .info_top h5 {
+.artist_cards .cards_container .top_card .card .artist_card_info .info_top h5,
+.artist_cards .cards_container .mid_card .card .artist_card_info .info_top h5,
+.artist_cards .cards_container .bottom_card .card .artist_card_info .info_top h5 {
   font-family: "Work Sans";
 }
-.artist_cards .cards_container .card .artist_card_info .info_top .info_top_avatar {
+.artist_cards .cards_container .top_card .card .artist_card_info .info_top .info_top_avatar,
+.artist_cards .cards_container .mid_card .card .artist_card_info .info_top .info_top_avatar,
+.artist_cards .cards_container .bottom_card .card .artist_card_info .info_top .info_top_avatar {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   align-items: center;
   gap: 12px;
 }
-.artist_cards .cards_container .card .artist_card_info .info_bottom {
+.artist_cards .cards_container .top_card .card .artist_card_info .info_bottom,
+.artist_cards .cards_container .mid_card .card .artist_card_info .info_bottom,
+.artist_cards .cards_container .bottom_card .card .artist_card_info .info_bottom {
   display: flex;
   justify-content: space-between;
   padding: 0px;
   width: 270px;
 }
-.artist_cards .cards_container .card .artist_card_info .info_bottom .info_left {
+.artist_cards .cards_container .top_card .card .artist_card_info .info_bottom .info_left,
+.artist_cards .cards_container .mid_card .card .artist_card_info .info_bottom .info_left,
+.artist_cards .cards_container .bottom_card .card .artist_card_info .info_bottom .info_left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 21px 0px 0px;
   gap: 8px;
 }
-.artist_cards .cards_container .card .artist_card_info .info_bottom .info_right {
+.artist_cards .cards_container .top_card .card .artist_card_info .info_bottom .info_right,
+.artist_cards .cards_container .mid_card .card .artist_card_info .info_bottom .info_right,
+.artist_cards .cards_container .bottom_card .card .artist_card_info .info_bottom .info_right {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1275,6 +1304,9 @@ h5 {
   gap: 25px;
   width: 240px;
 }
+.footer .footer_container .footer_mid h5 {
+  font-family: "Space Mono";
+}
 .footer .footer_container .footer_mid .mid_bottom {
   display: flex;
   flex-direction: column;
@@ -1288,6 +1320,9 @@ h5 {
   align-items: flex-start;
   padding: 0px;
   width: 420px;
+}
+.footer .footer_container .footer_right h5 {
+  font-family: "Space Mono";
 }
 .footer .footer_container .footer_right .right_bottom {
   display: flex;
