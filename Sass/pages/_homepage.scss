@@ -86,15 +86,6 @@ h5 {
   color: $text;
 }
 
-.textWorkSans {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #cccccc;
-}
-
 .container {
   width: 1050px;
 }
@@ -497,7 +488,9 @@ h5 {
             justify-content: space-around;
             gap: 5px;
             width: 270px;
-
+            h5 {
+              font-family: "Work Sans";
+            }
             .info_top_avatar {
               display: flex;
               flex-direction: row;

@@ -154,6 +154,15 @@ html {
   cursor: pointer;
 }
 
+.textWorkSans {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #cccccc;
+}
+
 nav {
   padding: 20px 50px;
 }
@@ -304,15 +313,6 @@ h5 {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-}
-
-.textWorkSans {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #cccccc;
 }
 
 .container {
@@ -710,6 +710,9 @@ h5 {
   gap: 5px;
   width: 270px;
 }
+.discover .discover_container .discover_cards .card .discover_info .info_top h5 {
+  font-family: "Work Sans";
+}
 .discover .discover_container .discover_cards .card .discover_info .info_top .info_top_avatar {
   display: flex;
   flex-direction: row;
@@ -963,6 +966,265 @@ h5 {
 }
 .create .create_container .button:hover {
   transform: scale(0.96);
+}
+
+.artist_welcome > img {
+  width: 100%;
+  position: relative;
+}
+.artist_welcome .avatar_div {
+  width: 1050px;
+  gap: 10px;
+  position: absolute;
+  top: calc(100vh - 45%);
+}
+.artist_welcome .avatar_div > img {
+  border: 2px solid #2b2b2b;
+  border-radius: 20px;
+}
+
+.animakid {
+  background: #2b2b2b;
+  padding: 40px 0px;
+  gap: 30px;
+}
+.animakid .animakid_container {
+  display: flex;
+  padding: 0px;
+  gap: 30px;
+  margin-top: 50px;
+}
+.animakid .animakid_container .left_section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  width: 599px;
+  height: 377px;
+}
+.animakid .animakid_container .left_section .numbers {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: 510px;
+  height: 74px;
+}
+.animakid .animakid_container .left_section .bio {
+  padding: 0px;
+  gap: 10px;
+  width: 599px;
+  height: 80px;
+}
+.animakid .animakid_container .left_section .bio > h5 {
+  color: #858584;
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.animakid .animakid_container .left_section .links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 599px;
+  height: 77px;
+}
+.animakid .animakid_container .left_section .links h5 {
+  color: #858584;
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.animakid .animakid_container .left_section .links .tags {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  width: 200px;
+  height: 32px;
+  cursor: pointer;
+}
+.animakid .animakid_container .left_section .links .tags img {
+  transition: 0.3s;
+}
+.animakid .animakid_container .left_section .links .tags img:hover {
+  transform: scale(0.9);
+}
+.animakid .animakid_container .right_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: 351px;
+  height: 60px;
+}
+.animakid .animakid_container .right_section .button {
+  width: 186px;
+  height: 60px;
+  background: #a259ff;
+  border-radius: 20px;
+  padding: 0px 50px;
+  gap: 12px;
+  transition: 0.3s;
+}
+.animakid .animakid_container .right_section .button:hover {
+  transform: scale(0.96);
+  border: 2px solid #a259ff;
+  background-color: transparent;
+}
+.animakid .animakid_container .right_section .button:nth-child(2) {
+  border: 2px solid #a259ff;
+  background-color: transparent;
+  padding: 0px 30px;
+  gap: 12px;
+}
+.animakid .animakid_container .right_section .button:nth-child(2):hover {
+  background-color: #a259ff;
+  border: 2px solid transparent;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+}
+.info .info_container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+}
+.info .info_container .infos {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+  gap: 16px;
+  width: 350px;
+  height: 60px;
+}
+.info .info_container .infos:hover {
+  border-bottom: 2px solid #858584;
+}
+.info .info_container .infos:hover h5 {
+  color: white;
+}
+.info .info_container .infos:hover .info_number {
+  background: #858584;
+}
+.info .info_container .infos h5 {
+  text-align: center;
+  text-transform: capitalize;
+  color: #858584;
+}
+.info .info_container .infos .info_number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+  width: 40px;
+  height: 32px;
+  background: #3b3b3b;
+  border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.artist_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+  gap: 30px;
+  background: #3b3b3b;
+}
+.artist_cards .cards_container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+.artist_cards .cards_container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 330px;
+  height: 469px;
+  background: #2b2b2b;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.artist_cards .cards_container .card:hover {
+  transform: scale(0.96);
+}
+.artist_cards .cards_container .card .artist_image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  border-radius: 20px 20px 0px 0px;
+}
+.artist_cards .cards_container .card .artist_card_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 30px 25px;
+  gap: 25px;
+  width: 330px;
+}
+.artist_cards .cards_container .card .artist_card_info .info_top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 5px;
+  width: 270px;
+}
+.artist_cards .cards_container .card .artist_card_info .info_top h5 {
+  font-family: "Work Sans";
+}
+.artist_cards .cards_container .card .artist_card_info .info_top .info_top_avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+.artist_cards .cards_container .card .artist_card_info .info_bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  width: 270px;
+}
+.artist_cards .cards_container .card .artist_card_info .info_bottom .info_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 21px 0px 0px;
+  gap: 8px;
+}
+.artist_cards .cards_container .card .artist_card_info .info_bottom .info_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+  gap: 8px;
 }
 
 .footer {
