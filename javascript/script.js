@@ -1,6 +1,8 @@
 const discoverCards = document.querySelector(".discover_cards");
 const discoverBtn = document.querySelector(".discoverBtn");
 
+
+
 const heartBtn = document.querySelector(".heart");
 const numberValue = document.querySelector(".number_value");
 
@@ -12,6 +14,6 @@ discoverBtn.addEventListener("click", () => {
   window.location.href = "../Html/artistPage.html";
 });
 
-// heartBtn.addEventListener("click", () => {
-//   heartBtn.style.fill = "red";  
-// });
+heartBtn.addEventListener("click", () => {
+  heartBtn.style.backgroundColor = "red";
+});
