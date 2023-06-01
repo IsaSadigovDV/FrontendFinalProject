@@ -65,28 +65,33 @@ nav {
           display: none;
         }
         .burgerMenu{
-          display: initial;
+          display: flex;
+          justify-content: flex-end;
         }
       }
     }
   }
 }
 
-// Responsive Styles for Phones
 @media only screen and (max-width: 690px) {
   .navbar_container {
     width: 375px;
   }
 
   .left_side_navbar {
-    img {
-      width: 100px;
-      height: auto;
+    width: 100px;
+    height: auto;
+    img{
+      min-width: 100%;
     }
   }
   .right_side_navbar {
     .navbar_links {
       display: none;
+    }
+    .burgerMenu{
+      display: flex;
+      justify-content: flex-end;
     }
   }
 
