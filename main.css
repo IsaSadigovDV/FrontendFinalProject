@@ -1318,8 +1318,10 @@ h5 {
 }
 
 .heart {
+  background-color: lightgray;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
 }
 
 .market_cards {
@@ -1485,6 +1487,30 @@ h5 {
   font-family: "Work Sans";
 }
 
+@media screen and (max-width: 1280px) {
+  .welcome_creators {
+    padding: 40px 0px;
+  }
+  .welcome_creators .creators_container {
+    width: 690px;
+  }
+  .welcome_creators .creators_container h2 {
+    line-height: 46px;
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 834px) {
+  .welcome_creators {
+    padding: 0;
+  }
+  .welcome_creators .creators_container {
+    width: 315px;
+  }
+  .welcome_creators .creators_container h2 {
+    line-height: 39px;
+    font-size: 28px;
+  }
+}
 .creatots_headers {
   display: flex;
   flex-direction: column;
