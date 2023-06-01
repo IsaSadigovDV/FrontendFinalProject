@@ -15,7 +15,7 @@
     }
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1050px) {
   .welcome_creators {
     padding: 40px 0px;
     .creators_container {
@@ -24,10 +24,14 @@
         line-height: 46px;
         font-size: 38px;
       }
+      p {
+        line-height: 22px;
+        font-size: 16px;
+      }
     }
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 690px) {
   .welcome_creators {
     padding: 0;
     .creators_container {
@@ -62,6 +66,9 @@
       height: 60px;
       border-bottom: 2px solid transparent;
       transition: 0.2s;
+      h5:nth-child(2) {
+        display: none;
+      }
       h5 {
         font-family: "Work Sans";
         color: #858584;
@@ -71,6 +78,51 @@
         h5 {
           color: white;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .creatots_headers {
+    padding: 0px 10px;
+    .headers_container {
+      width: 690px;
+      .head {
+        width: 170px;
+        h5:first-child {
+          display: none;
+        }
+        h5:nth-child(2) {
+          display: initial;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+      .head h5:last-child {
+        display: initial;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 690px) {
+  .creatots_headers {
+    padding: 0px 10px;
+    .headers_container {
+      width: 315px;
+      .head {
+        width: 78.75px;
+        h5:first-child {
+          display: none;
+        }
+        h5:nth-child(2) {
+          display: initial;
+        }
+      }
+      .head h5:last-child {
+        display: initial;
       }
     }
   }
@@ -146,7 +198,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 12px 0px;
+      padding: 40px 0px;
       gap: 20px;
       width: 1050px;
 
@@ -290,6 +342,101 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .creators_cards {
+    .creators_cards_container {
+      width: 690px;
+      .card_header {
+        width: 690px;
+        .cards {
+          width: 690px;
+          .left_header {
+            width: 215px;
+          }
+          .right_header {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0px;
+            gap: 20px;
+            width: 220px;
+            .change,
+            .volume {
+              width: 100px;
+            }
+            .sold {
+              display: none;
+            }
+          }
+        }
+      }
+      .tables {
+        .tables_outline {
+          width: 690px;
+          .table {
+            padding: 0px 20px;
+            width: 690px;
+            height: 31px;
+            .left_table {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              padding: 0px;
+              gap: 20px;
+              width: 410px;
+              height: 31px;
+              .table_number {
+                width: 24px;
+                height: 24px;
+                border-radius: 20px;
+              }
+              .table_items {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 12px;
+                width: 240px;
+                height: 31px;
+                .table_photo {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  padding: 0px;
+                  gap: 10px;
+                  width: 24px;
+                  height: 24px;
+                }
+                .table_text {
+                  h5 {
+                    line-height: 31px;
+                    font-size: 22px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .creators_cards {
+    .creators_cards_container {
+      width: 315px;
+      .card_header {
+        width: 100%;
+
+        .cards {
+          width: 315px;
         }
       }
     }
