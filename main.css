@@ -939,9 +939,15 @@ h5 {
 }
 .create .create_container {
   display: flex;
+  width: 100%;
 }
 .create .create_container .create_left {
   width: 50%;
+}
+.create .create_container .create_left img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .create .create_container .create_right {
   display: flex;
@@ -1029,6 +1035,87 @@ h5 {
   transform: scale(0.96);
 }
 
+@media only screen and (max-width: 1050px) {
+  .create {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+  }
+  .create .create_container .create_left {
+    width: 50%;
+  }
+  .create .create_container .create_left img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .create .create_container .create_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 0px;
+    gap: 40px;
+  }
+  .create .create_container .create_right .right_top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .create .create_container .create_right .right_top h2 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .create .create_container .create_right .right_top .right_top_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .create .create_container .create_right .right_top .right_top_text p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .create .create_container .create_right .right_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    height: 305px;
+  }
+  .create .create_container .create_right .right_bottom .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+  }
+  .create .create_container .create_right .right_bottom .inputs input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 12px;
+    border: 1px solid #858584;
+    border-radius: 20px;
+  }
+  .create .create_container .create_right .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    gap: 12px;
+    width: 325px;
+    height: 46px;
+    background: #a259ff;
+    border-radius: 20px;
+  }
+}
 .artist_welcome > img {
   width: 100%;
   position: relative;
@@ -2177,6 +2264,9 @@ h5 {
     gap: 20px;
     width: 690px;
     height: 33px;
+  }
+  .footer .footer_bottom .divider {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 690px) {
