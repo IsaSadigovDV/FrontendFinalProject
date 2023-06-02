@@ -4,8 +4,6 @@
     position: relative;
   }
   .avatar_div {
-    width: 1050px;
-    gap: 10px;
     position: absolute;
     top: calc(100vh - 45%);
     > img {
@@ -30,22 +28,16 @@
       align-items: flex-start;
       padding: 0px;
       gap: 30px;
-      width: 599px;
-      height: 377px;
       .numbers {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         padding: 0px;
         gap: 20px;
-        width: 510px;
-        height: 74px;
       }
       .bio {
         padding: 0px;
         gap: 10px;
-        width: 599px;
-        height: 80px;
         > h5 {
           color: #858584;
           font-size: 22px;
@@ -59,8 +51,6 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
-        width: 599px;
-        height: 77px;
         h5 {
           color: #858584;
           font-size: 22px;
@@ -73,8 +63,6 @@
           flex-direction: row;
           align-items: flex-start;
           gap: 10px;
-          width: 200px;
-          height: 32px;
           cursor: pointer;
           img {
             transition: 0.3s;
@@ -92,8 +80,6 @@
       align-items: flex-start;
       padding: 0px;
       gap: 20px;
-      width: 351px;
-      height: 60px;
       .button {
         width: 186px;
         height: 60px;
@@ -133,6 +119,7 @@
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
+    height: 60px;
     .infos {
       box-sizing: border-box;
       display: flex;
@@ -141,8 +128,6 @@
       align-items: center;
       padding: 0px 30px;
       gap: 16px;
-      width: 350px;
-      height: 60px;
       transition: 0.1s;
       &:hover {
         border-bottom: 2px solid #858584;
@@ -195,14 +180,11 @@
       flex-direction: row;
       align-items: flex-start;
       gap: 30px;
-
       .card {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0px;
-        width: 330px;
-        height: 469px;
         background: #2b2b2b;
         border-radius: 20px;
         transition: 0.3s;
@@ -224,14 +206,12 @@
           align-items: flex-start;
           padding: 20px 30px 25px;
           gap: 25px;
-          width: 330px;
           .info_top {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: space-around;
             gap: 5px;
-            width: 270px;
             h5 {
               font-family: "Work Sans";
             }
@@ -247,7 +227,6 @@
             display: flex;
             justify-content: space-between;
             padding: 0px;
-            width: 270px;
             .info_left {
               display: flex;
               flex-direction: column;
@@ -261,6 +240,306 @@
               justify-content: center;
               padding: 0px;
               gap: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .artist_welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    > img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .artist_container {
+      .avatar_div {
+        position: absolute;
+        top: calc(100vh - 70%);
+        > img {
+          border: 2px solid #2b2b2b;
+          border-radius: 20px;
+        }
+      }
+    }
+    // .artist_container {
+    //   .avatar_div {
+    //     margin-bottom: 20px;
+    //     position: absolute;
+    //     top: 25%;
+    //     > img {
+    //       top: 0;
+    //       border: 2px solid #2b2b2b;
+    //       border-radius: 20px;
+    //     }
+    //   }
+    // }
+  }
+  .animakid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 30px;
+    .animakid_container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+      .left_section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        &:first-child {
+          display: flex;
+        }
+        .numbers {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 0px;
+          gap: 20px;
+          width: 510px;
+          height: 74px;
+        }
+        .bio {
+          padding: 0px;
+          gap: 10px;
+          width: 599px;
+          height: 80px;
+          > h5 {
+            color: #858584;
+            font-size: 22px;
+            line-height: 35px;
+            font-weight: 700;
+            text-transform: capitalize;
+          }
+        }
+        .links {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          width: 599px;
+          height: 77px;
+          h5 {
+            color: #858584;
+            font-size: 22px;
+            line-height: 35px;
+            font-weight: 700;
+            text-transform: capitalize;
+          }
+          .tags {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 10px;
+            width: 200px;
+            height: 32px;
+            cursor: pointer;
+            img {
+              transition: 0.3s;
+              &:hover {
+                transform: scale(0.9);
+              }
+            }
+          }
+        }
+      }
+      .right_section {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+        width: 351px;
+        height: 60px;
+        .button {
+          width: 186px;
+          height: 60px;
+          background: #a259ff;
+          border-radius: 20px;
+          padding: 0px 50px;
+          gap: 12px;
+          transition: 0.3s;
+          &:hover {
+            transform: scale(0.96);
+            border: 2px solid #a259ff;
+            background-color: transparent;
+          }
+        }
+        .button:nth-child(2) {
+          border: 2px solid #a259ff;
+          background-color: transparent;
+          padding: 0px 30px;
+          gap: 12px;
+          &:hover {
+            background-color: #a259ff;
+            border: 2px solid transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    .info_container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      .infos {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 30px;
+        gap: 16px;
+        transition: 0.1s;
+        h5 {
+          font-size: 16px;
+          line-height: 22px;
+        }
+        &:hover {
+          width: 100%;
+          border-bottom: 2px solid #858584;
+
+          h5 {
+            color: white;
+          }
+          .info_number {
+            background: #858584;
+          }
+        }
+        h5 {
+          text-align: center;
+          text-transform: capitalize;
+          color: #858584;
+        }
+        .info_number {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 5px 10px;
+          gap: 10px;
+          background: #3b3b3b;
+          border-radius: 20px;
+          width: fit-content;
+          p {
+            font-size: 12px;
+            line-height: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .artist_cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 80px 0px;
+    gap: 30px;
+    background: #3b3b3b;
+    width: 100%;
+    .cards_container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 30px;
+      align-items: center;
+      .top_card .card:last-child,
+      .mid_card .card:last-child,
+      .bottom_card .card:last-child {
+        display: none;
+      }
+      .top_card,
+      .mid_card,
+      .bottom_card {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0px;
+          background: #2b2b2b;
+          border-radius: 20px;
+          transition: 0.3s;
+          cursor: pointer;
+          &:hover {
+            transform: scale(0.96);
+          }
+          .artist_image {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 10px;
+            border-radius: 20px 20px 0px 0px;
+          }
+          .artist_card_info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px 30px 25px;
+            gap: 25px;
+            .info_top {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: space-around;
+              gap: 5px;
+              h5 {
+                font-family: "Work Sans";
+              }
+              .info_top_avatar {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                align-items: center;
+                gap: 12px;
+              }
+            }
+            .info_bottom {
+              display: flex;
+              justify-content: space-between;
+              padding: 0px;
+              .info_left {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px 21px 0px 0px;
+                gap: 8px;
+              }
+              .info_right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0px;
+                gap: 8px;
+              }
             }
           }
         }
