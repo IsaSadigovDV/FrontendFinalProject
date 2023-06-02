@@ -172,13 +172,8 @@ nav {
   margin: auto;
 }
 
-.hidden {
-  display: none;
-}
-
 .navbar_container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -214,6 +209,9 @@ nav {
   height: 46px;
   padding: 12px 20px;
 }
+.navbar_container .right_side_navbar .navbar_links .burgerMenu {
+  display: none;
+}
 .navbar_container .right_side_navbar .navbar_links .navBtn {
   transition: 0.3s;
   background-color: #a259ff;
@@ -227,20 +225,15 @@ nav {
   nav {
     padding: 15px 50px;
   }
-  nav .navbar_container {
-    width: 690px;
-  }
   nav .navbar_container .left_side_navbar img {
     width: 182.56px;
     height: 24px;
   }
-  nav .navbar_container .right_side_navbar .navbar_links .button,
-  nav .navbar_container .right_side_navbar .navbar_links a {
+  nav .navbar_container .right_side_navbar .navbar_links button {
     display: none;
   }
   nav .navbar_container .right_side_navbar .navbar_links .burgerMenu {
     display: flex;
-    justify-content: space-evenly;
   }
 }
 @media only screen and (max-width: 690px) {
@@ -261,13 +254,6 @@ nav {
   }
   nav .left_side_navbar img {
     min-width: 100%;
-  }
-  nav .right_side_navbar .navbar_links {
-    display: none;
-  }
-  nav .right_side_navbar .burgerMenu {
-    display: flex;
-    justify-content: flex-end;
   }
   nav .right_side_navbar .navbar_links {
     width: auto;
@@ -562,23 +548,22 @@ h5 {
   background: #2b2b2b;
   border-radius: 20px;
   z-index: 2;
-}
-.creators .creators_container .creators_cards .card_row .card .card_number > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* Base (Body) - Space Mono */
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 140%;
+  /* or 22px */
   display: flex;
   align-items: center;
   text-align: center;
+  /* Caption & Label Text */
   color: #858584;
-  z-index: 0;
-  position: absolute;
-  width: 10px;
-  height: 22px;
-  left: calc(50% - 5px);
-  top: calc(50% - 11px);
 }
 .creators .creators_container .creators_cards .card_row .card .creators_card_photo {
   width: 110px;
@@ -943,9 +928,11 @@ h5 {
 }
 .create .create_container .create_left {
   width: 50%;
+  max-height: 100%;
 }
 .create .create_container .create_left img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -956,7 +943,6 @@ h5 {
   padding: 100px 0px;
   margin-left: 60px;
   gap: 40px;
-  width: 610px;
 }
 .create .create_container .create_right .right_top {
   display: flex;
@@ -971,7 +957,6 @@ h5 {
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
-  width: 460px;
 }
 .create .create_container .create_right .right_top .right_top_text .textWorkSans {
   font-size: 22px;
@@ -1021,8 +1006,9 @@ h5 {
 }
 .create .create_container .right_bottom .inputs img {
   position: absolute;
-  left: 20px;
-  top: 15px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .create .create_container .button {
   padding: 0px 50px;
@@ -1093,12 +1079,15 @@ h5 {
     align-items: flex-start;
     padding: 0px;
     gap: 15px;
+    width: 325px;
+    height: 46px;
   }
   .create .create_container .create_right .right_bottom .inputs input {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 16px 20px;
+    padding-left: 52px;
     gap: 12px;
     border: 1px solid #858584;
     border-radius: 20px;

@@ -6,12 +6,9 @@ nav {
   width: 1280px;
   margin: auto;
 }
-.hidden {
-  display: none;
-}
+
 .navbar_container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   .left_side_navbar {
@@ -44,6 +41,9 @@ nav {
         height: 46px;
         padding: 12px 20px;
       }
+      .burgerMenu {
+        display: none;
+      }
       .navBtn {
         transition: 0.3s;
         background-color: $call_to_action;
@@ -60,7 +60,6 @@ nav {
   nav {
     padding: 15px 50px;
     .navbar_container {
-      width: 690px;
       .left_side_navbar {
         img {
           width: 182.56px;
@@ -69,13 +68,11 @@ nav {
       }
       .right_side_navbar {
         .navbar_links {
-          .button,
-          a {
+          button {
             display: none;
           }
           .burgerMenu {
             display: flex;
-            justify-content: space-evenly;
           }
         }
       }
@@ -101,15 +98,6 @@ nav {
       height: auto;
       img {
         min-width: 100%;
-      }
-    }
-    .right_side_navbar {
-      .navbar_links {
-        display: none;
-      }
-      .burgerMenu {
-        display: flex;
-        justify-content: flex-end;
       }
     }
 
