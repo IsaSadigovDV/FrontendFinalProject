@@ -193,7 +193,6 @@ nav {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  width: 607px;
   height: 60px;
   gap: 10px;
   transition: 0.3s;
@@ -256,7 +255,6 @@ nav {
     min-width: 100%;
   }
   nav .right_side_navbar .navbar_links {
-    width: auto;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
