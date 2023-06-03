@@ -160,37 +160,33 @@
             gap: 20px;
             width: 430px;
             height: 60px;
+            position: relative;
             .table_number {
-              display: flex;
-              flex-direction: row;
-              align-items: flex-start;
-              padding: 0px;
-              gap: 10px;
-              position: relative;
+              position: absolute;
               width: 30px;
               height: 30px;
+              left: 0px;
               background: #2b2b2b;
               border-radius: 20px;
-              position: relative;
-              p {
-                position: absolute;
-                left: 40%;
-                font-family: "Space Mono";
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 22px;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                color: #858584;
-              }
-              .even {
-                left: calc(50% - 20px / 2);
-                top: calc(50% - 22px / 2);
-              }
+              z-index: 2;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: auto;
+              /* Base (Body) - Space Mono */
+
+              font-family: "Space Mono";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22px;
+              display: flex;
+              align-items: center;
+              text-align: center;
+              color: #858584;
             }
             .table_items {
+              margin-left: 40px;
               display: flex;
               flex-direction: row;
               justify-content: center;
@@ -440,21 +436,28 @@
               margin-top: 20px;
               gap: 20px;
               .table_number {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                left: 0px;
+                background: #2b2b2b;
+                border-radius: 20px;
+                z-index: 2;
                 display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-                width: 24px;
-                height: 24px;
-                p {
-                  font-family: "Space Mono";
-                  font-style: normal;
-                  font-weight: 400;
-                  font-size: 16px;
-                  line-height: 22px;
-                  display: flex;
-                  align-items: center;
-                  text-align: center;
-                }
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                /* Base (Body) - Space Mono */
+
+                font-family: "Space Mono";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #858584;
               }
               .table_items {
                 display: flex;
@@ -709,24 +712,31 @@
               width: 167px;
               gap: 12px;
               .table_number {
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
+                position: absolute;
                 width: 24px;
                 height: 24px;
-                margin-top: 10px;
-                p {
-                  font-family: "Space Mono";
-                  font-style: normal;
-                  font-weight: 400;
-                  font-size: 13px;
-                  line-height: 12px;
-                  display: flex;
-                  align-items: center;
-                  text-align: center;
-                }
+                left: -5px;
+                background: #2b2b2b;
+                border-radius: 20px;
+                z-index: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                /* Base (Body) - Space Mono */
+
+                font-family: "Space Mono";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #858584;
               }
               .table_items {
+                width: -webkit-fill-available;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
