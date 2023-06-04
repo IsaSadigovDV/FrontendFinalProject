@@ -17,9 +17,10 @@ createInputs[0].addEventListener("keyup", () => {
     checkstatus *= false;
   } else {
     vali1.style.color = "green";
-    vali1.textContent = "Correct validation";
+    vali1.textContent =null;
   }
 });
+
 createInputs[1].addEventListener("keyup", () => {
   if (!ValidateEmail(createInputs[1].value.trim())) {
     vali2.style.color = "red";
@@ -27,9 +28,10 @@ createInputs[1].addEventListener("keyup", () => {
     checkstatus *= false;
   } else {
     vali2.style.color = "green";
-    vali2.textContent = "Correct validation";
+    vali2.textContent = null;
   }
 });
+
 
 createInputs[2].addEventListener("keyup", () => {
   if (!ValidatePassword(createInputs[2].value.trim())) {
@@ -38,9 +40,10 @@ createInputs[2].addEventListener("keyup", () => {
     checkstatus *= false;
   } else {
     vali3.style.color = "green";
-    vali3.textContent = "Correct validation";
+    vali3.textContent = null;
   }
 });
+
 
 createInputs[3].addEventListener("keyup", () => {
   if (createInputs[2].value.trim() != createInputs[3].value.trim()) {
@@ -49,9 +52,10 @@ createInputs[3].addEventListener("keyup", () => {
     checkstatus *= false;
   } else {
     vali4.style.color = "green";
-    vali4.textContent = "Correct validation";
+    vali4.textContent = null;
   }
 });
+
 
 vali5.addEventListener("click", () => {
   const newwtoast = document.createElement("div");
@@ -67,10 +71,15 @@ vali5.addEventListener("click", () => {
   document.body.style.position = "relative";
   newwtoast.style.left = "75vw";
   newwtoast.style.bottom = "85vh";
-  if (!!checkstatus) {
+  console.log(createInputs[2].value.trim() == createInputs[3].value.trim());
+  console.log(ValidatePassword(createInputs[2].value.trim()));
+  console.log(ValidateEmail(createInputs[1].value.trim()));
+  console.log(!!createInputs[0].value.trim());
+  if ((createInputs[2].value.trim() == createInputs[3].value.trim())&&(ValidatePassword(createInputs[2].value.trim()))&&(ValidateEmail(createInputs[1].value.trim()))&&(!!createInputs[0].value.trim())) {
     newwtoast.style.backgroundColor = "green";
     newwp.textContent = "Success";
-  } else {
+  } 
+  else {
     newwtoast.style.backgroundColor = "red";
     newwp.textContent = "Error";
   }
@@ -80,8 +89,7 @@ vali5.addEventListener("click", () => {
 
   setTimeout(() => {
     newwtoast.remove();
-  }, 2000);
-  
+  }, 3000);
 });
 
 function ValidateEmail(mail) {
