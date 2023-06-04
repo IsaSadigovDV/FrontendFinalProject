@@ -4955,7 +4955,6 @@ h5 {
     padding: 0px;
     gap: 31px;
     width: 690px;
-    height: 541px;
   }
   .footer .footer_container .footer_left {
     display: flex;
@@ -4964,7 +4963,6 @@ h5 {
     padding: 0px;
     gap: 20px;
     width: 690px;
-    height: 163px;
   }
   .footer .footer_container .footer_left .left_logo {
     width: 243.41px;
@@ -4977,7 +4975,6 @@ h5 {
     padding: 0px;
     gap: 20px;
     width: 690px;
-    height: 111px;
   }
   .footer .footer_container .footer_mid {
     display: flex;
@@ -4986,7 +4983,6 @@ h5 {
     padding: 0px;
     gap: 20px;
     width: 690px;
-    height: 161px;
   }
   .footer .footer_container .footer_mid .mid_bottom {
     display: flex;
@@ -5003,8 +4999,6 @@ h5 {
     align-items: flex-start;
     padding: 0px;
     gap: 20px;
-    width: 690px;
-    height: 157px;
   }
   .footer .footer_container .footer_right .right_bottom {
     width: 690px;
@@ -5020,10 +5014,8 @@ h5 {
     padding: 0px;
     gap: 20px;
     width: 690px;
-    height: 33px;
   }
   .footer .footer_bottom .divider {
-    margin: auto;
     width: 100%;
   }
 }
