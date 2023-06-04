@@ -1206,13 +1206,13 @@ h5 {
     color: #ffffff;
   }
   .categories {
+    padding: 40px 0px;
+  }
+  .categories .categories_container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 0px;
     gap: 40px;
-  }
-  .categories .categories_container {
     width: 690px;
   }
   .categories .categories_container .categories_top {
@@ -1234,6 +1234,7 @@ h5 {
     align-items: flex-start;
     padding: 0px;
     gap: 30px;
+    width: 690px;
   }
   .categories .categories_container .categories_cards .card {
     display: flex;
@@ -1241,6 +1242,9 @@ h5 {
     align-items: center;
     padding: 0px;
     width: 150px;
+    height: 209px;
+    background: #3b3b3b;
+    border-radius: 20px;
     background: #3b3b3b;
     border-radius: 20px;
     transition: 0.3s;
@@ -1251,7 +1255,7 @@ h5 {
   }
   .categories .categories_container .categories_cards .card .card_photo {
     width: 150px;
-    border-radius: 20px 20px 0px 0px;
+    height: 142px;
   }
   .categories .categories_container .categories_cards .card .card_photo .blured_photo {
     display: flex;
@@ -1261,15 +1265,20 @@ h5 {
     position: relative;
     padding: 0px;
     gap: 10px;
-    width: auto;
+    width: 150px;
+    height: 142px;
   }
   .categories .categories_container .categories_cards .card .card_photo .blured_photo > img {
+    width: 150px;
+    height: 142px;
     filter: blur(7.5px);
   }
   .categories .categories_container .categories_cards .card .card_photo .photo_tool {
     position: absolute;
     top: 25%;
-    left: 30%;
+    left: 25%;
+  }
+  .categories .categories_container .categories_cards .card .card_photo .photo_tool > img {
     width: 80px;
     height: 80px;
   }
@@ -1277,8 +1286,17 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 30px 25px;
+    padding: 20px 20px 25px;
     gap: 25px;
+    width: 150px;
+    height: 67px;
+  }
+  .categories .categories_container .categories_cards .card .card_text h5 {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
   }
   .discover {
     display: flex;
@@ -1889,6 +1907,100 @@ h5 {
     font-weight: 400;
     font-size: 16px;
     color: #ffffff;
+  }
+  .categories {
+    padding: 40px 0px;
+  }
+  .categories .categories_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 315px;
+  }
+  .categories .categories_container .categories_top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 100%;
+  }
+  .categories .categories_container .categories_top h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 39px;
+  }
+  .categories .categories_container .categories_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 315px;
+    height: 209px;
+  }
+  .categories .categories_container .categories_cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 150px;
+    height: 209px;
+    background: #3b3b3b;
+    border-radius: 20px;
+    background: #3b3b3b;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .categories .categories_container .categories_cards .card:hover {
+    transform: scale(0.92);
+  }
+  .categories .categories_container .categories_cards .card .card_photo {
+    width: 150px;
+    height: 142px;
+  }
+  .categories .categories_container .categories_cards .card .card_photo .blured_photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    gap: 10px;
+    width: 150px;
+    height: 142px;
+  }
+  .categories .categories_container .categories_cards .card .card_photo .blured_photo > img {
+    width: 150px;
+    height: 142px;
+    filter: blur(7.5px);
+  }
+  .categories .categories_container .categories_cards .card .card_photo .photo_tool {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+  .categories .categories_container .categories_cards .card .card_photo .photo_tool > img {
+    width: 80px;
+    height: 80px;
+  }
+  .categories .categories_container .categories_cards .card .card_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px 25px;
+    gap: 25px;
+    width: 150px;
+    height: 67px;
+  }
+  .categories .categories_container .categories_cards .card .card_text h5 {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
   }
   .discover {
     display: flex;
