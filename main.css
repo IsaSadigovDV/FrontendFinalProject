@@ -1934,11 +1934,9 @@ h5 {
   .categories .categories_container .categories_cards {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 0px;
-    gap: 20px;
-    width: 315px;
-    height: 209px;
   }
   .categories .categories_container .categories_cards .card {
     display: flex;
